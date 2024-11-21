@@ -1,0 +1,133 @@
+<!doctype html>
+<html>
+<head>
+	  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>欢迎来到D11229（点击头像进入个人主页）</title>
+  <link rel="stylesheet" href="./css/index.css">
+<meta charset="utf-8">
+<title>shiyan</title>
+<style type="text/css">
+body,td,th {
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+	font-size: 24px;
+	color: #EB0404;
+}
+body {
+	background-color: #FFFFFF;
+	background-image: url(images/1732068234353.png);
+	background-repeat: repeat;
+	margin-right: -5000px;
+}
+a:link {
+	color: #9209F3;
+}
+</style>
+</head>
+
+<body>
+<table width="200%" border="0" align="center">
+  <tbody>
+<tr>
+	<td align="center"><audio id="bgm" controls="controls" muted="muted" autoplay="autoplay" loop="loop" >
+	  <!-- 优先尝试加载MP3格式音频 -->
+	  <source src="musics/woheni.mp3" type="audio/mpeg">
+	  </audio>
+	  <h2>229寝室主页（点击头像跳转个人主页）</h2>
+		<p><a href="https://yuguchenyu.github.io/myweb/start.html"><img src="images/Cache_158e4c5a34bb1314.jpg" width="149" height="152"alt="" class="width5 head inblock"></a>寝室长：鱼骨成鱼</p></td>
+		  
+    </tr>
+    <tr>
+      <td align="center"><a href="https://firefly498.github.io/web/"><img src="images/398B5ABC04624066AEA3AB2C9B6CDD9D.jpg" width="149" height="152"alt="" class="width5 head inblock"></a>成员：So Far Away</p>
+    </tr>
+    <tr>
+		<td align="center"><a href="https://passing666.github.io/personalpage/"><img src="images/F5F3FED0E33761DACE8DF4E6BDF5CEC8.jpg" width="149" height="152"alt="" class="width5 head inblock"></a>成员：路过的人</p>
+    <tr>
+			<td align="center"><a href="https://piaoduoduo.github.io/1702/"><img src="images/668B48B62683F5432A9302A3259CC5E3.jpg"width="149" height="152"alt="" class="width5 head inblock"></a>成员：鲸云雾起</p>
+    </tr>
+    <tr>
+      <td align="center"><a href="https://comeandgo111.github.io/comeandgoo.github.io/"><img src="images/b_994ef8c90c14794a0c6582080294b408.jpg"width="149" height="152"alt="" class="width5 head inblock"></a>成员：江河行地</p>
+    </tr>
+    <tr>
+      <td></td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+    </tr>
+   
+  </tbody>
+</table>
+<script>
+	// 在页面加载完成后，尝试手动触发音频播放（针对部分浏览器限制自动播放的情况）
+        window.onload = function () {
+            var audio = document.getElementById('bgm');
+            // 先暂停音频（如果之前有自动播放尝试但被浏览器阻止）
+            audio.pause();
+            // 再播放音频，这样可能绕过部分浏览器的自动播放限制
+            audio.play();
+        };
+
+        // 当用户首次与页面进行交互（比如点击页面任意位置）时，再次播放音频以确保声音正常响起
+        document.addEventListener('click', function () {
+            var audio = document.getElementById('bgm');
+            if (audio.paused) {
+                audio.play();
+            }
+        });
+    
+        var myVideo = document.querySelector('.video-background');
+        myVideo.addEventListener('ended', function () {
+            myVideo.pause();
+            myVideo.loop = false;
+            myVideo.currentTime = myVideo.duration;
+        });
+	</script>
+</body>
+</html>
+
