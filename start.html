@@ -1,0 +1,139 @@
+<!doctype html>
+<html>
+<head>
+	  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>欢迎来到我的世界</title>
+  <link rel="stylesheet" href="./css/index.css">
+<meta charset="utf-8">
+<title>shiyan</title>
+<style type="text/css">
+body,td,th {
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+	font-size: 24px;
+	color: #EB0404;
+}
+body {
+	background-color: #FFFFFF;
+	background-image: url(images/1731070233548.jpg);
+	background-repeat: repeat;
+	margin-left: -800px;
+	margin-right: -2000px;
+}
+a:link {
+	color: #9209F3;
+}
+</style>
+</head>
+
+<body>
+<table width="200%" border="0" align="center">
+  <tbody>
+<tr>
+	<td align="center"><audio id="bgm" controls="controls" muted="muted" autoplay="autoplay" loop="loop" >
+	  <!-- 优先尝试加载MP3格式音频 -->
+	  <source src="musics/house.mp3" type="audio/mpeg">
+	  </audio>
+	  <p>满目山河空念远</p>
+		<p>落花风雨更伤春</p>
+		<p>不如怜取眼前人</p>
+		<p>我是挖掘机技术7215班687寝室竺佳浩</p>
+		<p><img src="images/Cache_158e4c5a34bb1314.jpg" width="149" height="152"alt="" class="width5 head inblock">欢迎来到我的博客</p></td>
+		  
+    </tr>
+    <tr>
+      <td align="center"> <p>今天的风儿，甚是喧嚣啊。</p></td>
+    </tr>
+    <tr>
+		<td align="center"><p>只要你不失去崇高，整个HUST都将向你敞开。
+	    </p>
+      <p>我的HUST之旅，要启动了！</p></td>
+    <tr>
+		<td align="center"><h2><a href="index.html">你能做的，岂止于此</h2></td>
+    </tr>
+    <tr>
+      <td align="center">（点击上面我开启的博客）</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+    </tr>
+   
+  </tbody>
+</table>
+<script>
+	// 在页面加载完成后，尝试手动触发音频播放（针对部分浏览器限制自动播放的情况）
+        window.onload = function () {
+            var audio = document.getElementById('bgm');
+            // 先暂停音频（如果之前有自动播放尝试但被浏览器阻止）
+            audio.pause();
+            // 再播放音频，这样可能绕过部分浏览器的自动播放限制
+            audio.play();
+        };
+
+        // 当用户首次与页面进行交互（比如点击页面任意位置）时，再次播放音频以确保声音正常响起
+        document.addEventListener('click', function () {
+            var audio = document.getElementById('bgm');
+            if (audio.paused) {
+                audio.play();
+            }
+        });
+    
+        var myVideo = document.querySelector('.video-background');
+        myVideo.addEventListener('ended', function () {
+            myVideo.pause();
+            myVideo.loop = false;
+            myVideo.currentTime = myVideo.duration;
+        });
+	</script>
+</body>
+</html>
+
